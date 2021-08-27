@@ -90,7 +90,6 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     background-color: rgb(46,48,146) ;
     color: #fff;
-    box-shadow: 0px 5px 5px grey;
 }
 
 /*3.Unidades*/
@@ -102,14 +101,15 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     width: 100%;
     padding: 15px;
+    ;
 }
 
 .unidades-cristales h5{
     color: white;
-    text-shadow: 0px 2px 3px black;
-    background-color: rgb(46,48,146);;
+    background-color: rgb(46,48,146);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0px 4px 15px black
 }
 
 .unidad-container{
@@ -167,8 +167,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 .ubicacion h4{
-    color:#fff;
-    text-shadow: 2px 3px 1px black
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 0px 4px 15px black
 
 }
 
@@ -201,7 +203,8 @@ body::-webkit-scrollbar-thumb{
 
 /*8.Contactacnos*/
 .section-contacto{
-    background: rgb(46,48,146);
+    background-image: url("../public/images/fondos/fondo\ \(4\).jpg");
+    background-size: cover;
     justify-content: center;
     padding: 15px;
 }
@@ -209,9 +212,9 @@ body::-webkit-scrollbar-thumb{
 .formulario-contacto{
     text-align: left;
     padding: 10px;
-    background-color:rgba(255, 255, 255, 0.7);
     box-shadow: 0px 4px 15px black;
     border-radius: 6px;
+    background-color: rgba(255,255,255,0.7);
 }
 .formulario-contacto h2{
     text-shadow: 0px 4px 15px grey;
@@ -221,9 +224,7 @@ body::-webkit-scrollbar-thumb{
    box-shadow: 0px 4px 15px grey;
 }
 
-.btn{
-    box-shadow: 1px 1px 5px grey
-}
+
 
 /*9.Sobre Conurbes*/
 .conurbes-container{
