@@ -9,20 +9,26 @@
     <!--CSS BOOTSTRAP-->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
+    <!--reCatchap-->
+    <script src='https://www.google.com/recaptcha/api.js?render=6LePxTEcAAAAAI8XZKdHo-TiI5tSxxdhVKJPTatc'></script>
     
 </head>
 <body>
     <main>  
+        <div class="opening">
+            <img src="./public/images/fondos/opening.png" alt="">
+            <button type="button" class="btn btn-primary b-continue">¡Continuar!</button>
+        </div>
 
         <!--0.header-->
-        <header class="container-fluid fixed-top" id="inicio">   
+        <header class="container-fluid fixed-top" >   
         <div>
-            <div class="row">
+            <div class="row" >
                 <nav class="navbar barraNavegacion navbar-dark  fixed-top">
                     
                     <a href="#inicio" class="navbar-brand ml-lg-5">
@@ -43,13 +49,13 @@
                                 <a href="#inicio" class="nav-link">inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#simulador" class="nav-link">simula tu credito</a>
+                                <a href="#simulator" class="nav-link">simula tu credito</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#contacto" class="nav-link">contactanos</a>
+                                <a href="#contact" class="nav-link">contactanos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">paga aqui - Fiduciaria Banco de Bogota <i class="fas fa-star"></i></a>
+                                <a href="https://www.fidubogota.com/pse" class="nav-link">paga aqui - Fiduciaria Banco de Bogota <i class="fas fa-star"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -60,7 +66,7 @@
 
         <div class="main-container">
             <!--1.seccion principal-->
-            <section class="principal-container">
+            <section class="principal-container" id="inicio">
                 <div class="principal-title" >
                     <p>
                         <b>
@@ -78,10 +84,13 @@
                         <img src="./public/images/proyecto/Render-fachada-1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
+                        <img src="./public/images/banners/banner1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
                         <img src="./public/images/banners/bancobogota.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./public/images/banners/baner1.png" class="d-block w-100" alt="...">
+                        <img src="./public/images/logos/intendecia.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="./public/images/proyecto/Fachada-proyecto-Cornubes.jpg" class="d-block w-100" alt="...">
@@ -114,7 +123,7 @@
             <!--2.Sobre Cristales de Murano-->
             <section class="texto-cristales"  >
                 <p> Nuevo proyecto en el Barrio Engativa, Tres torres, 80 apartamentos DUPLÉX y SIMPLÉX de 40 m2 en total. Cumple el sueño de tener tu vivienda propia. Cristales de Murano cuenta con <b>Zonas Sociales, Coworking, Study Lounge, Salón Múltiple, Terraza BBQ, Parqueaderos Privados y de Visitantes, Nuestra Oficina de administración.</b> Estamos ubicados en la <a href="#ubicacion">Calle 64 d 113b 35</a> </p>
-                <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+                <a href="#contact" class="btn btn-primary">Agenda tu cita</a>
             </section>
 
             <!--3.Unidades-->
@@ -125,10 +134,10 @@
                             <p><h3>- DUPLÉX -</h3><br><span>Apartamentos de 2 pisos con:<br>2 habitaciones - 1 baño<br>Sala comedor - Cocina</span></p>
                         </div>
                         <div class="mb-1">
-                            <img class="zoom_01" src="./public/images/unidades/Planta-tipo-2.jpg" data-zoom-image="./public/images/unidades/Planta-tipo-2.jpg">
+                            <img src="./public/images/unidades/Planta-tipo-2.jpg" class="imagen">
                         </div>
                         <div>
-                            <img class="zoom_02" src="./public/images/unidades/Planta-tipo-3.jpg" data-zoom-image="./public/images/unidades/Planta-tipo-3.jpg">
+                            <img class="imagen" src="./public/images/unidades/Planta-tipo-3.jpg" >
                         </div>
                         
                     </div>
@@ -137,7 +146,7 @@
                             <p><h3>- SIMPLÉX -</h3><br><span>Apartamentos de 1 piso con:<br>2 habitaciones - 1 baño<br>Sala comedor - Cocina</span></p>
                         </div>
                         <div>
-                            <img class="zoom_03" src="./public/images/unidades/Planta-tipo-1.jpg" data-zoom-image="./public/images/unidades/Planta-tipo-1.jpg">
+                            <img src="./public/images/unidades/Planta-tipo-1.jpg"  class="imagen">
                         </div>
                         
                     </div>
@@ -147,7 +156,7 @@
             <section class="video-container">
                 <div class="video-box">
                     <h5><b>MAS SOBRE CRISTALES DE MURANO</b></h5>
-                    <video src="./public/video/video1.mp4" controls ></video>
+                    <video src="./public/video/video1.mp4" controls autoplay loop="" ></video>
                     <h5>¡Dale Play!</h5>
                 </div>
                 <div class="video-box">
@@ -163,15 +172,15 @@
                 <div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.351872544473!2d-74.13989658590991!3d4.708795442900082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f834d3dcb62c3%3A0x9974af1ae47c6ea0!2sCl.%2064d%20%23113b-35%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1629562343111!5m2!1sen!2sco"  style="border:0;" allowfullscreen="" loading="lazy" class="mapa-cristales justify-self-center" id="simulador"></iframe>
                 </div>
-                <a href="#contacto" class="btn btn-primary mb-lg-5">Agenda tu cita</a>
+                <a href="#contact" class="btn btn-primary mb-lg-5">Agenda tu cita</a>
             </section>
                 
             <!--6.fidu-->
-            <section class="fidu-bogota">
-                <a href="">
+            <section class="fidu-bogota" id="contact">
+                <a href="https://www.fidubogota.com/pse">
                     <img src="./public/images/logos/Fidubogota_logo1.jpg" alt="">
                 </a>
-                <p>¡Paga aqui!</p>
+                <a href="https://www.fidubogota.com/pse">¡Paga aqui con PSE!</a>
             </section>
 
 
@@ -181,34 +190,33 @@
                     <h2><b>Contactanos</b></h2>
                     <p>Envianos un Mensaje</p>
 
-                    <form action="">
-
+                    <form class="contact-form">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                        <input type="text" id="name" class="form-control">
+                        <input type="text" id="name" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="phone">Telefono o Celular</label>
-                        <input type="number" id="phone" class="form-control">
+                        <input type="number" id="phone" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Correo electronico</label>
-                            <input type="text" id="email" class="form-control">
+                            <input type="text" id="email" class="form-control" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="">Mensaje</label>
-                            <textarea class="form-control" placeholder="Dejanos tu consulta, nos pondremos en contacto lo antes posible!"></textarea>
+                            <label for="message">Mensaje</label>
+                            <textarea required class="form-control" id="message" placeholder="Dejanos tu consulta, nos pondremos en contacto lo antes posible!"></textarea>
                         </div>
                         
                         <div class="form-group">
-                            <input type="checkbox" id="acept" class="form-check-label">
-                            <label for="acept">Acepto terminos y condiciones</label>
+                            <input type="checkbox" id="acept" class="form-check-label" required>
+                            <label for="acept" >Acepto terminos y condiciones</label>
                         </div>
 
-                        <input type="submit" class="btn btn-primary">
+                        <button class="g-recaptcha btn btn-primary" type="submit">Submit</button>
                     </form>
 
                 </div>
@@ -217,9 +225,9 @@
 
             <!--8.Sobre Cristales de Murano-->
             <section class="texto-cristales"  >
-                <p> Apartamentos Duplex y Simplex de 40mt2 aprox <br>
+                <p> Apartamentos Duplex y Simplex de 40m2 aprox <br>
                 <span><b>PREGUNTA POR NUESTROS MINI DEPARTAMENTOS</b></span> </p>
-                <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+                <a href="#contact" class="btn btn-primary">Agenda tu cita</a>
             </section>
 
             <!--9 .Sobre Conurbes-->
@@ -231,7 +239,7 @@
                     <p><b>UN PROYECTO DE:</b></p>
                     <a href="https://www.conurbes.com/#"><img src="./public/images/logos/logoConurbes.png" alt="" class="conurbes-logo"></a>
                     <p>CONURBES S.A.S NACIÓ INSTITUCIONALMENTE EL 27 DE MARZO DE 2007 PRODUCTO DEL SUEÑO EMPRESARIAL DE UN HOMBRE VISIONARIO QUE CON TESÓN Y SABIDURÍA NO SÓLO PUSO LA PIEDRA ANGULAR DE ESTA COMPAÑÍA SINO QUE ADEMAS LA HA FORTALECIDO CON VALORES EMPRESARIALES INQUEBRANTABLES Y CON PROYECTOS QUE LLEVAN EL SELLO DE CALIDAD Y EXCELENCIA QUE SIEMPRE LO HAN CARACTERIZADO.</p>
-                    <a href="#contacto" class="btn btn-primary">Contactanos dando Click
+                    <a href="#contact" class="btn btn-primary">Contactanos dando Click
                     aqui!</a>
                 </div>
             </section>
@@ -241,13 +249,12 @@
         <footer>
             <div class="footer-cristales">
                 <p>
-                    <i class="fas fa-phone-square"></i>  321 231 2788<br><i class="fas fa-envelope"></i>   cristalesdemurano@gmail.com  </p>
-
+                    CONURBES S.A.S - DIRECCION OFIC: CL 64 N° 113D - 10 2DO PISO <br> <i class="fas fa-phone-square"></i>   321 231 2788  - <i class="fas fa-envelope"></i>   cristalesdemurano@gmail.com  </p>
                 </p>
             </div>
             
             <div class="copyrigth">
-                    <p>Espacio para el copyrigth</p>
+                    <small>Copyright &#169 2021 CCR DEV - Todos los derechos reservados </small>
             </div>
         </footer>
 
@@ -260,14 +267,13 @@
         </div>
     </div>    
     </main>
- 
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
-    <script type="text/javascript" src="./js/image1.js"></script>
-    <script type="text/javascript" src="./js/image2.js"></script>
-    <script type="text/javascript" src="./js/image3.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/mail.js"></script>
+    
 </body>
 </html>
