@@ -72,61 +72,67 @@
                             <fieldset>
                                 <legend>Tus Ingresos</legend>
                                 <p>Ingresa el monto mensual de tus ingresos en cada campo</p>
-                                <div class="input-group mb-1">
+                                <label for="Suledo Neto">Suledo Neto</label>
+                                <div class="input-group mb-1  input-group-sm input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Suledo Neto" id="igsueldo" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Suledo Neto" id="igsueldo" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                 </div>
 
-                                <div class="input-group mb-1">
+                                <label for="">Servicios y Honorarios</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Servicios y Honorarios" id="igservicios" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Servicios y Honorarios" id="igservicios" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                 </div>
 
-                                <div class="input-group mb-1">
+                                <label for="">Otros Ingresos Profesionales</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="igprofesionales" placeholder="Otros Ingresos Profesionales" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" id="igprofesionales" placeholder="Otros Ingresos Profesionales" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                 </div>
 
-                                <div class="input-group mb-1">
+                                <label for="">Pensiones y Haberes</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="igpensiones" placeholder="Pensiones y Haberes" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" id="igpensiones" placeholder="Pensiones y Haberes" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                 </div>
 
-                                <div class="input-group mb-1">
+                                <label for="">Rendimieto de Inversiones</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="iginversiones" placeholder="Rendimieto de Inversiones" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" id="iginversiones" placeholder="Rendimieto de Inversiones" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                 </div>
 
-                                <div class="input-group mb-1">
+                                <label for="">Otros Ingresos</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="igotros" placeholder="Otros Ingresos" min="0">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" id="igotros" placeholder="Otros Ingresos" min="0">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
@@ -138,7 +144,7 @@
                                         <h3>Total de Ingresos </h3>
                                     </th>
                                     <th> 
-                                        <span id="toingresos"></span>
+                                        $ <span id="toingresos"></span>.00
                                     </th>
                                 </tr>
                             </table>
@@ -148,51 +154,57 @@
                             <fieldset>
                                 <legend>Tus Gastos Mensuales</legend>
                                 <p>Los gastos están divididos en gastos corrientes y en deudas. Ingresa el monto mensual.  </p>
-                                <div class="input-group mb-1">
+                                
+                                <label for="">Alquiler y Expensas</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaalquiler" placeholder="Alquiler y Expensas">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaalquiler" placeholder="Alquiler y Expensas">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text">.00</span>
+                                    </div>
+                                  </div>
+                                  
+                                  <label for="">Servicios Basicos del Hogar</label>
+                                  <div class="input-group mb-1 input-group-sm">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gahogar" placeholder="Servicios Basicos del Hogar">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Alimentacion</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gahogar" placeholder="Servicios Basicos del Hogar">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaalimentacion" placeholder="Alimentacion">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Educacion</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaalimentacion" placeholder="Alimentacion">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaeducacion" placeholder="Educacion">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Otros gastos(Opcionales)</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaeducacion" placeholder="Educacion">
-                                    <div class="input-group-append">
-                                      <span class="input-group-text">.00</span>
-                                    </div>
-                                  </div>
-
-                                  <div class="input-group mb-1">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">$</span>
-                                    </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaotros" placeholder="Otros gastos(Opcionales)">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="gaotros" placeholder="Otros gastos(Opcionales)">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
@@ -208,59 +220,62 @@
                                             <h3>Total Gastos Corrientes</h3>
                                         </th>
                                         <th> 
-                                            <span id="togastos"></span>
+                                           $ <span id="togastos"></span>.00
                                         </th>
                                     </tr>
                                 </table>
                             
                                 
-
-                                <div class="input-group mb-1">
+                                <label for="">Compras y pagos con Tarjeta de Credito</label>
+                                <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="depagos" placeholder="Compras y pagos con Tarjeta de Credito">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="depagos" placeholder="Compras y pagos con Tarjeta de Credito">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Cuota de Prestamos Personales</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="deprestamos" placeholder="Cuota de Prestamos Personales">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="deprestamos" placeholder="Cuota de Prestamos Personales">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Facturas Anteriores Impagas</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="defacturas" placeholder="Facturas Anteriores Impagas">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="defacturas" placeholder="Facturas Anteriores Impagas">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-
-                                  <div class="input-group mb-1">
+                                  <label for="">Cuota Hipoteca</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="dehipoteca" placeholder="Cuota Hipoteca">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="dehipoteca" placeholder="Cuota Hipoteca">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
                                   </div>
 
-                                  <div class="input-group mb-1">
+                                  <label for="">Otras Deudas</label>
+                                  <div class="input-group mb-1 input-group-sm">
                                     <div class="input-group-prepend">
                                       <span class="input-group-text">$</span>
                                     </div>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="deotros" placeholder="Otras Deudas">
+                                    <input type="number" value="0" class="form-control" aria-label="Amount (to the nearest dollar)" min="0" id="deotros" placeholder="Otras Deudas">
                                     <div class="input-group-append">
                                       <span class="input-group-text">.00</span>
                                     </div>
@@ -272,7 +287,7 @@
                                             <h3>Total Deudas</h3>
                                         </th>
                                         <th> 
-                                            <span id="todeudas"></span>
+                                           $ <span id="todeudas"></span>.00
                                         </th>
                                     </tr>
                                 </table>

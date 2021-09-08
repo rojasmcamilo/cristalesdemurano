@@ -25,9 +25,21 @@ let simulador = document.querySelector("#simulador");
 
 calcular.addEventListener('click', function(e){ 
     e.preventDefault();
-    alert("error");
-    alert(igsueldo.value.parseInt());
-    console.log(igsueldo.value.number());
-    toingresos.innerHTML = igsueldo.value.number() +igservicios.value.number()+igprofesionales.value.number()+igpensiones.value.number() + iginversiones.value.number() + igotros.value.number()
+
+    let reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+    let ingresos = [ parseFloat(igsueldo.value) , parseFloat(igservicios.value) , parseFloat(igprofesionales.value) , parseFloat(igpensiones.value) , parseFloat(iginversiones.value) , parseFloat(igotros.value)]
+    let sumaingresos = ingresos.reduce(reducer)
+    toingresos.innerHTML = sumaingresos;
+
+    let gastoscorrientes = [parseFloat(gaalquiler.value),parseFloat(gahogar.value),parseFloat(gaalimentacion.value),parseFloat(gaeducacion.value),parseFloat(gaotros.value)]
+    console.log( gastoscorrientes );
+    let sumagastos = gastoscorrientes.reduce(reducer);
+    togastos.innerHTML = sumagastos;
+
+    let totaldeudas = [parseFloat(depagos.value ),parseFloat(deprestamos.value),parseFloat(defacturas.value),parseFloat(dehipoteca.value),parseFloat(deotros.value)]
+    let sumadeudas = totaldeudas.reduce(reducer);
+    todeudas.innerHTML = sumadeudas;
+    
 })
 

@@ -728,6 +728,16 @@ footer{
     padding: 10px
 }
 
+.simulator label{
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.text-label{
+    width: 20%;
+}
+
 @media (min-width: 768px){
     .simulator-container{
         padding: 15px 15%;
