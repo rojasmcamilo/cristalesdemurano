@@ -265,6 +265,27 @@ body::-webkit-scrollbar-thumb{
     font-weight: 500;
 }
 
+.herramientas{
+    text-align: center;
+    background-color: rgb(46,48,146);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.herramientas div {
+    padding: 15px;
+}
+
+.herramientas div a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0px 4px 4px black;
+}
 /*7.Simulador*/
 
 /*8.Contactacnos*/
@@ -453,6 +474,15 @@ footer{
     }
     .fidu-bogota a{
         font-size: 26px;
+    }
+
+    .herramientas{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .herramientas div a {
+        font-size: 20px;
     }
 
     .section-contacto{
